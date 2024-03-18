@@ -1,5 +1,79 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Course registration</title>
 
+</head>
+<body>
+  <h1>ABBOT ELEMENTARY SCHOOL </h1>
+  <p>
+Abbot Elementary is a vibrant and inclusive educational institution dedicated to fostering a supportive and enriching learning environment for students. Situated in a welcoming community, Abbot Elementary prides itself on its commitment to academic excellence, holistic development, and personalized instruction.At Abbot Elementary, every student is encouraged to explore their unique talents and interests through a diverse range of academic programs and extracurricular activities. The school's dedicated faculty and staff are passionate about inspiring a love for learning and empowering students to reach their full potential.
+</P>
+<P>
+With a focus on innovation and collaboration, Abbot Elementary embraces modern teaching methods and technology to enhance the educational experience. The school values collaboration between students, teachers, parents, and the wider community, fostering a sense of belonging and mutual respect..
+</p>
+  <section name="Img">
+    <img src="file:///C:/Users/LENOVO/Desktop/WEB/Hackathon/web-technologies-level-1-hackathon/AB.png" alt="Left-brained (analytical, methodical, logical) VS Right-brained(artsy, creative, emotion)">
+
+ </section>
+
+ <section name="form">
+  <h2>Course registration Form</h2>
+<form id= "registration_form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required>
+
+  <fieldset>
+    <legend>Gender:</legend>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="other"> Other</label>
+  </fieldset>
+
+  <label for="subjects">Subjects:</label>
+  <select id="subjects" name="subjects" multiple required>
+    <option value="English">English</option>
+    <option value="Math">Math</option>
+    <option value="Science">Science</option>
+    <option value="ArtAndCraft">Art and Craft</option>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Geography">Geography</option>
+    <option value="History">History</option>
+  </select>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <input type="hidden" name="sessionId" value="123456">
+  <div class="button-group">
+    <input type="submit" value="Register">
+    <input type="button" value="Cancel" onclick="clearForm()">
+    
+
+  </div>
+  
+
+
+
+
+
+</form>
+ </section>
+</body>
+</html>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
